@@ -1,5 +1,5 @@
 
-    #README Generator
+  # README Generator
    ## Description:
    This project was made in order to assist developers with a speedy and efficient guide for their README files. Using this repository, the user can type in their response to a preset of questions and the program will take their inputs to generate a personalized README file. The goal of this project is to make the process easier by using this template.
    ## Table of Contents:
@@ -10,9 +10,9 @@
    * [Tests](#tests)
    * [Questions](#questions)
    ## Installation:
-   Enter "npm init -y" into your terminal to create a package.json file, in which "type": "module" will need to be added. Then run "npm i inquirer" to install the module. 
+   Enter "npm init -y" into your terminal to create a package.json file, in which "type": "module" will need to be added. Then run "npm i inquirer" to install the module.
    ## Usage:
-   Using Node.JS
+   Node.JS
    ## License: 
    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
    [Click to read more!](https://opensource.org/licenses/MIT)
@@ -21,5 +21,5 @@
    ## Tests:
    N/A
    ## Questions:
-   * Github: [Click this link!](https://github.com/victoriamata)
+   * Github: [Link to profile](https://github.com/victoriamata)
    * Email: victoriamataxo@gmail.com
