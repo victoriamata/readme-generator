@@ -12,7 +12,7 @@
    ## Installation:
    Enter "npm init -y" into your terminal to create a package.json file, in which "type": "module" will need to be added. Then run "npm i inquirer" to install the module.
    ## Usage:
-   Using Node.JS
+   Using Node.JS// Usage Video: https://drive.google.com/file/d/1jmu-tXgCkBJ1kDt4u8EOr2_07AxWPELe/view?usp=sharing
    ## License: 
    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
    [Click to read more!](https://opensource.org/licenses/MIT)
