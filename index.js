@@ -1,36 +1,10 @@
 // TODO: Include packages needed for this application
 import fs from 'fs';
 import inquirer from 'inquirer';
-
-const generate = ({title, description, installation, usage, contributing, tests, license, github, email}) =>
-  `# README Generator 
-   ${title}
-   ## Description:
-   ${description}
-   ## Table of Contents:
-   * [Installation](#installation)
-   * [Usage](#usage)
-   * [License](#license)
-   * [Contributing](#contributing)
-   * [Tests](#tests)
-   * [Questions](#questions)
-   ## Installation:
-   ${installation}
-   ## Usage:
-   ${usage}
-   ## License: 
-   ${license}
-   ## Contributing:
-   ${contributing}
-   ## Tests:
-   ${tests}
-   ## Questions:
-   * Github: [Click this link!](https://github.com/${github})
-   * Email: ${email}`;
+import generateMarkdown from './generateMarkdown.js';
 
 // TODO: Create an array of questions for user input
-inquirer
-  .prompt([
+const questions = [
     {
       type: "input",
       message: "Please enter project title:",
@@ -70,18 +44,15 @@ inquirer
       message: "Please enter your email:",
       name: "email"
     }
-  ])
-  .then((answers) => {
-    const readmeContent = generate(answers);
-
+  ];
+  inquirer.prompt(questions).then((response) => {
+    let markdown = generateMarkdown(response);
+    fs.writeFileSync("README.md", markdown);
+  });
 // TODO: Create a function to write README file
 // seems like it should call fs.writeFile
 function writeToFile(fileName, data) {}
 
-fs.writeFile('README.md', readmeContent, (err) =>
-  err ? console.log(err) : console.log('Successfully created a README file!')
-);
-});
 // TODO: Create a function to initialize app
 // this will probably call inquirer.prompt(...).then(...) 
 function init() {}
