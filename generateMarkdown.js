@@ -3,7 +3,7 @@
 //
 function renderLicenseBadge(license) {
   if (license === "Apache") {
-  return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+    return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
   } else if (license === "MIT") {
     return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
   } else {
@@ -28,11 +28,11 @@ function renderLicenseLink(license) {
 function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) { 
+function generateMarkdown(data) {
   console.log("data");
   console.log(data);
 
-
+  // decontrusted variables to be able to use in responses
   const {
     title,
     description,
@@ -45,9 +45,9 @@ function generateMarkdown(data) {
     email,
   } = data;
 
-  // return responses 
+  // return responses/README template
   return `
-    #${title}
+  # ${title}
    ## Description:
    ${description}
    ## Table of Contents:
@@ -69,7 +69,7 @@ function generateMarkdown(data) {
    ## Tests:
    ${tests}
    ## Questions:
-   * Github: [Click this link!](https://github.com/${github})
+   * Github: [Link to profile](https://github.com/${github})
    * Email: ${email}`;
 }
 
